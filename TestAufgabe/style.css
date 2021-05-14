@@ -1,0 +1,162 @@
+
+  @keyframes open {
+    from {
+      left: -100vw;
+    }
+    to {
+      left: 0;
+    }
+  }
+
+  #burgerbutton {
+    display: none;
+  }
+
+  .burgerimage {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    font-size: 28pt;
+    cursor: pointer;
+    transition: transform 0.8s ease;
+    color: white;
+  }
+
+
+    #logo {
+    display: block;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    height: 55px;
+    
+    }
+
+    #person {
+        height:50px;
+        width:50px;
+        float: right;
+    
+    }
+
+    #lupe {
+        height: 50px;
+        width: 50px;
+        float: right;
+        
+    }
+
+    .bild1 {
+        height: 600px;
+        width: 550px;
+    }
+
+    .bild2 {
+        height: 600px;
+        width: 300px;
+    }
+
+    .bild3{
+        height: 600px ;
+        width: 550px;
+    }
+
+  body{
+    background-color: black;
+
+    }
+
+    #colawerbung{
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    #colawerbungg{
+        width: 100%;
+    }
+
+  nav {
+    background-color:black;
+    display: block;
+    height: 60px;
+    border-bottom: 3px solid, black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+  }
+
+  nav ul {
+    display: none;
+    position: fixed;
+    top: 53px;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    list-style: none;
+  }
+
+  nav ul li {
+    display: block;
+    width: auto;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background-color:black;
+    border-bottom: 1px solid red;
+    display: block;
+    padding: 20px;
+    transition: 0.5s ease;
+  }
+
+  nav ul li a:hover {
+    background-color: lightgray;
+    color: darkgrey;
+  }
+
+  #burgerbutton:checked ~ ul {
+    display: block;
+    animation-name: open;
+    animation-duration: 0.8s;
+  }
+
+  #burgerbutton:checked ~ .burgerimage {
+    transform: rotate(180deg);
+  }
+
+  /*Alle anderen größen sollen dies Anzeigen*/
+  @media screen and (min-width: 601px){
+    img[alt=logo]{
+        position: absolute;
+        top: 10px;
+        left: 0;  
+    } }
+    /* I Phone Einstellungen für das Logo*/
+    @media screen and (max-width: 600px){
+        img[alt=logo]{
+            text-align: center; }
+
+            .bild1 {
+                height: 600px;
+                width: 100%;
+
+            }
+        
+            .bild2 {
+                height: 600px;
+                width: 100%;
+            }
+        
+            .bild3{
+                height: 600px ;
+                width: 100%;
+            }
+
+        
+    }   }   

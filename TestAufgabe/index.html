@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TestAufgabe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="navbar" >
+        <img id="person" src="person-icon-white.png" alt="p"> 
+        <img id="lupe" src="Lupe.jpg" alt=""> 
+        <img id="logo" src="logo-de.png" alt=""> </div>
+        <input type="checkbox" id="burgerbutton" />
+        <label for="burgerbutton" class="burgerimage" title="Navigation">&#x2630;</label>
+        <ul>
+            <li><a href="#ÜBER UNS">ÜBER UNS</a></li>
+            <li><a href="#UNSERE MARKE">UNSERE MARKE</a></li>
+            <li><a href="#VERANTWORTUNG">VERANTWORTUNG</a></li>
+            <li><a href="#UNTERHALTUNG">UNTERHALTUNG</a></li>
+        </ul>
+
+    </nav>
+
+    <div class="slideshow" style="max-width: 100%">
+        <img class="mySlides" src="https---specials-images.forbesimg.com-imageserve-5fd30e2b3832cda538ca9df9-0x0.jpg" style="width: 100%">
+        <img class="mySlides" src="shutterstock_494836945.jpg.webp" style="width: 100%">
+    </div>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+    </script>
+    
+<img class="bild1" src="cocacolavidrior500.png" alt="">
+<img class="bild2" src="cclf_033l_glas_at_o_b.jpg" alt="">
+<img class="bild3" src="136415_l1.jpg" alt="">
+</body>
+</html>

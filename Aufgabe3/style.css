@@ -1,0 +1,17 @@
+
+
+#titel {
+    background-color:lightgrey;
+    height: 100px;
+    text-align: center;
+    ;
+}
+
+body{
+    background-image: image();
+}
+
+#navigation{
+    color: darkgreen;
+}
+
