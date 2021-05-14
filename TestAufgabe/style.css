@@ -50,17 +50,17 @@
 
     .bild1 {
         height: 600px;
-        width: 550px;
+        width: 35%;
     }
 
     .bild2 {
         height: 600px;
-        width: 300px;
+        width: 30%;
     }
 
     .bild3{
         height: 600px ;
-        width: 550px;
+        width: 35%;
     }
 
   body{
@@ -130,33 +130,20 @@
     transform: rotate(180deg);
   }
 
-  /*Alle anderen größen sollen dies Anzeigen*/
-  @media screen and (min-width: 601px){
-    img[alt=logo]{
-        position: absolute;
-        top: 10px;
-        left: 0;  
-    } }
-    /* I Phone Einstellungen für das Logo*/
-    @media screen and (max-width: 600px){
-        img[alt=logo]{
-            text-align: center; }
-
-            .bild1 {
-                height: 600px;
-                width: 100%;
-
-            }
-        
-            .bild2 {
-                height: 600px;
-                width: 100%;
-            }
-        
-            .bild3{
-                height: 600px ;
-                width: 100%;
-            }
-
-        
-    }   }   
+  @media screen and (min-width: 600px) {
+    .bild1 {
+      font-size: 80px;
+    }
+    .bild2{
+        font-size: 80px;
+    }
+    .bild3{
+        font-size: 80px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .bild1{
+      font-size: 30px;
+    }
+}
