@@ -65,5 +65,4 @@ console.log(z);
 console.log(Math.max(0, 150, 30, 20, -8, -200));
 
 Array.from({length: 100}, (_, x ) => console.log(x + 1 ));*/
-console.log(Math.random());
 //# sourceMappingURL=script.js.map
