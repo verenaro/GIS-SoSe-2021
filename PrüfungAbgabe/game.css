@@ -1,17 +1,17 @@
-/*@keyframes open {
+@keyframes open {
     from {
-      left: -100vw;
+        left: -100vw;
     }
     to {
-      left: 0;
+        left: 0;
     }
-  }
+}
 
-  #burgerbutton {
+#burgerbutton {
     display: none;
-  }
+}
 
-  .burgerimage {
+.burgerimage {
     position: absolute;
     top: 0;
     left: 10px;
@@ -19,29 +19,24 @@
     cursor: pointer;
     transition: transform 0.8s ease;
     color: teal;
-    
-  }
+}
 
-    #logo {
+#logo {
     position: absolute;
     height: 150px;
     left: 1200px;
     top: 0px;
-    
-    
-    }
+}
 
-  body{
+body {
     background-color: lightgray;
+}
 
-    }
-
-
-  nav {
-    background-color:white;
+nav {
+    background-color: white;
     display: block;
     height: 150px;
-    border-bottom: 3px solid,grey;
+    border-bottom: 3px solid, grey;
     position: fixed;
     top: 0;
     left: 0;
@@ -49,10 +44,9 @@
     z-index: 100;
     border-style: solid;
     border-color: teal;
+}
 
-  }
-
-  nav ul {
+nav ul {
     display: none;
     position: fixed;
     top: 53px;
@@ -60,61 +54,59 @@
     padding: 0;
     width: 200px;
     list-style: none;
-  }
+}
 
-  nav ul li {
+nav ul li {
     display: block;
     width: auto;
-  }
+}
 
-  nav ul li a {
+nav ul li a {
     text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color:white;
+    color: white;
     background-color: grey;
     border-bottom: 1px solid lightgray;
     display: block;
     padding: 20px;
     transition: 0.5s ease;
-  }
+}
 
-  nav ul li a:hover {
-    background-color:lightcyan;
+nav ul li a:hover {
+    background-color: lightcyan;
     color: darkgrey;
-  }
+}
 
-  #burgerbutton:checked ~ ul {
+#burgerbutton:checked~ul {
     display: block;
     animation-name: open;
     animation-duration: 0.8s;
-  }
+}
 
-  #burgerbutton:checked ~ .burgerimage {
+#burgerbutton:checked~.burgerimage {
     transform: rotate(90deg);
-  }
+}
 
-  h1{
+h1 {
     position: absolute;
     font-family: fantasy;
     color: teal;
     top: 5px;
     left: 40%;
     font-size: xx-large;
-  }
+}
 
-  .footer {
+.footer {
     background-color: white;
     position: absolute;
     bottom: 0px;
     left: 0px;
     padding-top: 0px;
-    border-style:solid;
+    border-style: solid;
     border-color: teal;
     width: 100%;
     height: 100px;
-    
 }
-*/
 
 * {
     padding: 0;
